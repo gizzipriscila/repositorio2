@@ -1,0 +1,163 @@
+
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navegador{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  background-color: rgb(213, 133, 233);
+
+     
+  
+
+    &__lista{
+      
+
+      list-style-type: none;
+
+    }
+
+    &__item{
+      color: black;
+
+
+    }
+
+    &__link{
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+
+
+    }
+}
+
+.encabezado{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: rgb(147, 97, 228);
+  font-size: 20px;
+
+    &__contacto{
+      
+      color:black;
+
+    }
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 15px;
+
+
+  &__datos{
+    color: black;
+
+  }
+}
+
+.nombrePagina{
+  display: flex;
+  color:rgb(147, 97, 228)
+   ;
+  font-size: 20px;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  font-size: 20px;
+  background-color: rgb(107, 186, 240);
+
+  &__datos{
+    color: negro;
+
+
+
+  }
+}
+
+.boton{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px;
+  &__item{
+    color: white;
+    background-color: rgb(54, 72, 238);
+
+    &--activo{
+      background-color: rgb(236, 126, 177);
+
+    }
+  }
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  background-color: rgb(213, 133, 233);
+  font-size: 30px;
+
+  &__parrafo{
+    color:black;
+
+    
+  }
+}
+
+.parrafoReciclaje{
+
+  @extend .formulario;
+
+    background-color: rgb(124, 238, 153);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: auto;
+
+
+}
+
+@mixin lista( $colorTexto , $colorFondo , $sizeTexto ){
+
+  color: $colorTexto;
+  background-color: $colorFondo;
+  font-size: $sizeTexto;
+  text-align: center;
+  list-style-type: none;
+  margin-right: 30px;
+
+}
+ 
+div ul li{
+
+  @include lista( red , pink , 25px);
+
+}
+
+$colorLetra : black;
+$colorFondo : grey; 
+
+h3{
+
+  font-size: 20px;
+  text-align: center;
+  background-color: $colorFondo;
+  color: $colorLetra;
+  
+
+}
+

@@ -1,0 +1,94 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+.navegador {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  background-color: #d585e9; }
+  .navegador__lista {
+    list-style-type: none; }
+  .navegador__item {
+    color: black; }
+  .navegador__link {
+    text-decoration: none;
+    color: black;
+    font-size: 20px; }
+
+.encabezado {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: #9361e4;
+  font-size: 20px; }
+  .encabezado__contacto {
+    color: black; }
+
+.formulario, .parrafoReciclaje {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 15px; }
+  .formulario__datos {
+    color: black; }
+
+.nombrePagina {
+  display: flex;
+  color: #9361e4;
+  font-size: 20px; }
+
+.formulario, .parrafoReciclaje {
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  font-size: 20px;
+  background-color: #6bbaf0; }
+  .formulario__datos {
+    color: negro; }
+
+.boton {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px; }
+  .boton__item {
+    color: white;
+    background-color: #3648ee; }
+    .boton__item--activo {
+      background-color: #ec7eb1; }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  background-color: #d585e9;
+  font-size: 30px; }
+  .footer__parrafo {
+    color: black; }
+
+.parrafoReciclaje {
+  background-color: #7cee99;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: auto; }
+
+div ul li {
+  color: red;
+  background-color: pink;
+  font-size: 25px;
+  text-align: center;
+  list-style-type: none;
+  margin-right: 30px; }
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  background-color: grey;
+  color: black; }
